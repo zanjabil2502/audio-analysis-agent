@@ -1,0 +1,1 @@
+uv run fastmcp run server.py --transport sse --port 8001
