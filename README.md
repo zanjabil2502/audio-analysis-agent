@@ -44,11 +44,6 @@ Two decoupled parts:
 - **Tools run in parallel** since they are independent — faster end-to-end.
 - **Structured LLM output via Pydantic.** `astructured_predict` forces the model to
   return a schema-valid object, so there is no fragile JSON-string parsing.
-- **No fabricated quality score.** An earlier version assigned a 0–100 score with
-  hand-picked penalty weights, but those weights had no reference/standard, so they
-  were removed. The system now reports **objective metrics** and lets the **LLM
-  interpret** quality qualitatively. A trustworthy numeric score would need
-  calibration against real labels (e.g. ASR Word Error Rate).
 
 ## Project structure
 
